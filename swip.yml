@@ -1,11 +1,11 @@
 version: "1"
 project:
-  name: ${scm.git.repo}
-  branch: ${scm.git.branch}
-  revision:
-    name: ${scm.git.commit}
-    date: ${scm.git.commit.date}
-    modified: ${scm.git.modified}
+    name: "CodeBuildPocSwipCli"
+    branch: "master"
+    revision:
+        name: "1"
+        modified: true
+        date: "2016-08-24T12:00:00Z"
 capture:
   build:
     buildCommands:
@@ -38,4 +38,4 @@ capture:
       - directory: ${project.projectDir}
 install:
   coverity:
-    version: 8.7.1
+    version: 2018.06
